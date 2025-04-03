@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+/* start nav mobile */
+.view{
+    left: -300px;
+    transition: 0.3s ease;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+/* end nav mobile */
+.propganda{
+    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) ,url(../Assets/home/nav\ photo.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    background-attachment: fixed;
+}
+
+.slick-slide {
+    margin: 0 10px;
+}
+
+
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
+  
+
+
+  /* top button */
+.top{
+    display: none;
+}
