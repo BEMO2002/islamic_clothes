@@ -4,8 +4,8 @@ const ctx = canvas.getContext('2d');
 const imageInput = document.getElementById('imageInput');
 const debugDiv = document.getElementById('debug');
 
-const canvasWidth = 550;
-const canvasHeight = 550;
+const canvasWidth = 500;
+const canvasHeight = 500;
 canvas.width = canvasWidth;
 canvas.height = canvasHeight;
 
@@ -26,8 +26,8 @@ function drawBackpack() {
     ctx.drawImage(backpackImage, 0, 0, canvasWidth, canvasHeight);
 
     if (uploadedImage) {
-        const imageX = 170;  // إحداثي X للمنطقة البيضاء
-        const imageY = 150;  // إحداثي Y للمنطقة البيضاء
+        const imageX = 145;  // إحداثي X للمنطقة البيضاء
+        const imageY = 130;  // إحداثي Y للمنطقة البيضاء
         const imageWidth = 220;  // عرض المنطقة البيضاء
         const imageHeight = 250; // ارتفاع المنطقة البيضاء
         const borderRadius = 30; // قيمة border-radius لتتناسب مع شكل المنطقة البيضاء

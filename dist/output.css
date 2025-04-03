@@ -2076,6 +2076,14 @@ input:checked + .toggle-bg {
   width: 250px;
 }
 
+.w-\[\] {
+  width: ;
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
 .min-w-\[310px\] {
   min-width: 310px;
 }
@@ -4001,6 +4009,18 @@ body{
 
   .lg\:w-\[500px\] {
     width: 500px;
+  }
+
+  .lg\:w-\[\] {
+    width: ;
+  }
+
+  .lg\:w-\[600px\] {
+    width: 600px;
+  }
+
+  .lg\:w-\[550px\] {
+    width: 550px;
   }
 
   .lg\:min-w-\[350px\] {
