@@ -437,6 +437,7 @@ document.addEventListener("DOMContentLoaded", function() {
     setupScrolling("container", "scroll-left", "scroll-right" );
     setupScrolling("container-bag", "left", "right");
     setupScrolling("container-shoose", "left-so", "right-so" );
+    setupScrolling("container-cloth", "left-clo", "right-clo" );
 });
 
 
