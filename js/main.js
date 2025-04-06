@@ -293,42 +293,6 @@ $(document).ready(function(){
         ]
     });
 });
-$(document).ready(function(){
-    $('.coll').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 4000,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    });
-});
 
 
 
@@ -406,15 +370,6 @@ searchPopup.addEventListener('click', (e) => {
 
 
 
-// ScrollReveal().reveal('.reveal', {
-//     distance: '50px',    // Distance the element moves
-//     duration: 1000,      // Animation duration in milliseconds
-//     delay: 200,          // Delay before animation starts
-//     origin: 'bottom',    // Animation starting point
-//     interval: 100,       // Delay between each element's animation
-//     easing: 'ease-in-out' // Animation easing
-// });
-
 document.addEventListener("DOMContentLoaded", function() {
     function setupScrolling(containerId, leftBtnId, rightBtnId ) {
         const container = document.getElementById(containerId);
@@ -462,3 +417,9 @@ topBtn.onclick = function() {
         behavior: "smooth",
     });
 };
+
+
+
+
+
+

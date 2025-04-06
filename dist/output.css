@@ -1598,10 +1598,6 @@ input:checked + .toggle-bg {
   right: -13rem;
 }
 
-.-right-72 {
-  right: -18rem;
-}
-
 .-right-full {
   right: -100%;
 }
@@ -1688,6 +1684,14 @@ input:checked + .toggle-bg {
 
 .top-\[38\%\] {
   top: 38%;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
+
+.top-2 {
+  top: 0.5rem;
 }
 
 .isolation-auto {
@@ -1948,6 +1952,10 @@ input:checked + .toggle-bg {
   height: 100vh;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
 .max-h-96 {
   max-height: 24rem;
 }
@@ -2050,6 +2058,10 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[500px\] {
+  width: 500px;
 }
 
 .min-w-0 {
@@ -2251,6 +2263,10 @@ input:checked + .toggle-bg {
 
 .gap-\[14px\] {
   gap: 14px;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .gap-x-2 {
@@ -2856,6 +2872,11 @@ input:checked + .toggle-bg {
   padding-bottom: 9px;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -3135,6 +3156,11 @@ input:checked + .toggle-bg {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
 }
 
 .opacity-0 {
@@ -3721,6 +3747,10 @@ body{
     display: none;
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -3728,8 +3758,8 @@ body{
 }
 
 @media (min-width: 960px) {
-  .lg\:-right-44 {
-    right: -11rem;
+  .lg\:-right-60 {
+    right: -15rem;
   }
 
   .lg\:-right-72 {
@@ -3738,18 +3768,6 @@ body{
 
   .lg\:right-0 {
     right: 0px;
-  }
-
-  .lg\:-right-52 {
-    right: -13rem;
-  }
-
-  .lg\:-right-6 {
-    right: -1.5rem;
-  }
-
-  .lg\:-right-60 {
-    right: -15rem;
   }
 
   .lg\:flex {
@@ -3776,16 +3794,20 @@ body{
     width: 600px;
   }
 
-  .lg\:min-w-\[350px\] {
-    min-width: 350px;
+  .lg\:w-\[40px\] {
+    width: 40px;
+  }
+
+  .lg\:w-\[400px\] {
+    width: 400px;
   }
 
   .lg\:min-w-\[300px\] {
     min-width: 300px;
   }
 
-  .lg\:min-w-\[30px\] {
-    min-width: 30px;
+  .lg\:min-w-\[350px\] {
+    min-width: 350px;
   }
 
   .lg\:grid-cols-2 {
