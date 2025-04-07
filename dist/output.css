@@ -1686,14 +1686,6 @@ input:checked + .toggle-bg {
   top: 38%;
 }
 
-.right-2 {
-  right: 0.5rem;
-}
-
-.top-2 {
-  top: 0.5rem;
-}
-
 .isolation-auto {
   isolation: auto;
 }
@@ -1952,10 +1944,6 @@ input:checked + .toggle-bg {
   height: 100vh;
 }
 
-.h-64 {
-  height: 16rem;
-}
-
 .max-h-96 {
   max-height: 24rem;
 }
@@ -2058,10 +2046,6 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[500px\] {
-  width: 500px;
 }
 
 .min-w-0 {
@@ -2261,12 +2245,16 @@ input:checked + .toggle-bg {
   gap: 1.25rem;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .gap-\[14px\] {
   gap: 14px;
 }
 
-.gap-6 {
-  gap: 1.5rem;
+.gap-8 {
+  gap: 2rem;
 }
 
 .gap-x-2 {
@@ -2652,6 +2640,11 @@ input:checked + .toggle-bg {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#5C4D3E\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(92 77 62 / var(--tw-bg-opacity, 1));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -2862,6 +2855,11 @@ input:checked + .toggle-bg {
   padding-bottom: 0.75rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .py-\[30px\] {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -2870,11 +2868,6 @@ input:checked + .toggle-bg {
 .py-\[9px\] {
   padding-top: 9px;
   padding-bottom: 9px;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .pb-10 {
@@ -3113,6 +3106,11 @@ input:checked + .toggle-bg {
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
 }
 
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity, 1));
@@ -3156,11 +3154,6 @@ input:checked + .toggle-bg {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
 }
 
 .opacity-0 {
@@ -3589,6 +3582,10 @@ body{
   opacity: 0.75;
 }
 
+.hover\:opacity-90:hover {
+  opacity: 0.9;
+}
+
 .before\:hover\:right-0:hover::before {
   content: var(--tw-content);
   right: 0px;
@@ -3786,20 +3783,16 @@ body{
     width: 190px;
   }
 
+  .lg\:w-\[400px\] {
+    width: 400px;
+  }
+
   .lg\:w-\[500px\] {
     width: 500px;
   }
 
   .lg\:w-\[600px\] {
     width: 600px;
-  }
-
-  .lg\:w-\[40px\] {
-    width: 40px;
-  }
-
-  .lg\:w-\[400px\] {
-    width: 400px;
   }
 
   .lg\:min-w-\[300px\] {

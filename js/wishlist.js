@@ -32,8 +32,8 @@ function addToWishlist(productId, productName, productPrice, productImage) {
       title: "Added to Wishlist",
       icon: "success",
       timer: 2000,
-      toast: true, 
-      position: "top-end", 
+      toast: true,
+      position: "top-end",
       showConfirmButton: false,
       customClass: {
         title: "text-xl font-bold",
@@ -41,8 +41,6 @@ function addToWishlist(productId, productName, productPrice, productImage) {
     });
   }
 }
-
-
 
 // Function to display wishlist items
 function displayWishlistItems() {
@@ -62,20 +60,25 @@ function displayWishlistItems() {
 
   wishlistItems.forEach((item) => {
     const itemElement = document.createElement("div");
-    itemElement.className = "border rounded-lg p-4 flex flex-col";
+    itemElement.className =
+      "bg-white rounded-lg shadow-lg hover:shadow-md transition-all duration-300 relative cursor-pointer";
     itemElement.innerHTML = `
-            <div class="relative">
-                <img src="${item.image}" alt="${item.name}" class="w-full h-64 object-cover rounded-lg">
-                <button onclick="removeFromWishlist('${item.id}')" class="absolute top-2 right-2 bg-white rounded-full p-2 shadow-md hover:bg-gray-100">
-                    <i class="ri-delete-bin-line text-red-500"></i>
-                </button>
-            </div>
-            <h3 class="mt-4 text-lg font-semibold">${item.name}</h3>
-            <p class="text-primary font-bold mt-2">${item.price} Egp</p>
-            <a href="index.html" class="mt-4 bg-primary text-center text-white py-2 px-4 rounded-md hover:bg-opacity-90">
-                See More
-            </a>
-        `;
+      <button onclick="removeFromWishlist('${item.id}')" class="absolute top-4 right-4 z-10 bg-white w-8 h-8 flex items-center justify-center rounded-full shadow-md hover:bg-gray-100">
+        <i class="ri-delete-bin-line text-red-500 text-lg"></i>
+      </button>
+      <div class="relative overflow-hidden">
+        <img src="${item.image}" alt="${item.name}" class="w-full h-[400px] object-cover rounded-lg rounded-b-none">
+      </div>
+      <div class="p-4">
+        <div class="flex items-center gap-2 mb-2">
+          <h3 class="text-base font-medium">${item.name}</h3>
+        </div>
+        <p class="text-base font-semibold mb-4">${item.price} Egp</p>
+        <a href="index.html" class="flex items-center justify-center font-semibold bg-[#5C4D3E] text-white py-2 px-4 rounded hover:opacity-90 transition-all duration-300">
+          See More
+        </a>
+      </div>
+    `;
     wishlistContainer.appendChild(itemElement);
   });
 }
@@ -93,17 +96,16 @@ function removeFromWishlist(productId) {
     title: "Deleted",
     icon: "success",
     toast: true,
-    position: "top-end", 
+    position: "top-end",
     showConfirmButton: false,
     background: "#fdecea",
-    iconColor: "#e3342f",  
+    iconColor: "#e3342f",
     timer: 2000,
     customClass: {
       title: "text-xl font-bold text-[#000]",
     },
   });
 }
-
 
 // Initialize wishlist functionality
 document.addEventListener("DOMContentLoaded", function () {
@@ -124,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
       e.preventDefault();
-      e.stopPropagation();  // دا بيمنع امن الكليك يوصل للكارت 
+      e.stopPropagation(); // دا بيمنع امن الكليك يوصل للكارت
 
       const card = this.closest(".car");
       if (!card) return;
